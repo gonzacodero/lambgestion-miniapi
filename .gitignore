@@ -1,0 +1,21 @@
+# Entorno virtual
+.venv/
+venv/
+
+# Python cache / compilados
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# VS Code / sistema
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Variables de entorno / secretos
+.env
+
+# Logs y caches comunes
+*.log
+.pytest_cache/
