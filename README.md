@@ -2,39 +2,28 @@
 
 # LambGestion Mini API
 
-Mini API REST en Python con FastAPI (demo de backend) para gestionar clientes.
+Mini API REST en Python con FastAPI (demo backend) para gestionar clientes.
 
 ## Features
-- GET `/health` (estado del servicio)
-- GET `/clientes` (listar clientes)
-- POST `/clientes` (crear cliente)
-- Documentación automática en `/docs`
+- `GET /health` → estado del servicio
+- `GET /clientes` → listar clientes
+- `POST /clientes` → crear cliente
+- Swagger/OpenAPI automático en `/docs`
 
 ## Requisitos
 - Python 3.11+
 
 ## Instalación (Windows)
+
 ~~~powershell
 python -m venv .venv
-.venv\Scripts\activate
+.\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 ~~~
 
 ## Ejecutar
+
 ~~~powershell
-uvicorn app.main:app --reload
-~~~
-
-## Uso
-- Swagger UI: http://127.0.0.1:8000/docs
-- Health: http://127.0.0.1:8000/health
-
-### Ejemplo POST /clientes
-Body (JSON):
-~~~json
-{
-  "nombre": "Gonza",
-  "email": "gonza@test.com"
-}
+python -m uvicorn app.main:app --reload
 ~~~
 
